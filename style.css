@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: product;
+}
+
+@font-face {
+    font-family: product;
+    src: url(/font/Product\ Sans\ Regular.ttf);
+}
+
+main {
+    display: flex;
+    padding: 5vw 3vw;
+}
+
+main .main-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7vw;
+}
+
+.main-left h1 {
+    font-size: 6vw;
+}
+
+.main-left h1 span {
+    color: #08F77E;
+}
+
+.main-left h2 {
+    color: #051050;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 5vw
+}
+
+.social h3 {
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.social a {
+    font-size: 3vw;
+    color: black;
+}
+
+main .main-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-right .img-wrapper {
+    width: 60%;
+    height: 70vh;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services,
+.showreel,
+.equipments {
+    padding: 3vw 7vw;
+    background-color: rgba(192, 192, 192, 0.453);
+    height: 100vh;
+}
+
+.services h4,
+.showreel h4,
+.equipments h4 {
+    text-align: center;
+    font-size: 4vw;
+    color: #051050;
+}
+
+/* swiper */
+
+.slider {
+    height: 60vh;
+    margin-top: 4vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.swiper-slide p {
+    margin-left: 1vw;
+}
+
+.swiper-slide button {
+    float: right;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    margin-right: 1vw;
+    background-color: silver;
+}
+
+.swiper-slide .service-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 1vw;
+}
+
+.swiper-slide h6 {
+    background-color: #08F77E;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: silver;
+    border-radius: 50px;
+    padding: 2vw;
+    font-size: 2vw;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+    color: black;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+/* swiper-end */
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    padding: 5vw 0vw;
+}
+
+.skills-container h1 {
+    font-size: 5vw;
+    color: #051050;
+    padding: 2vw 7vw;
+    width: 30%;
+}
+
+.skills-container .skills {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.skills span {
+    background-color: #08f780a0;
+    border-radius: 50px;
+    padding: 7px 10px;
+}
+
+.skills .span-container {
+    display: flex;
+    gap: 2vw;
+}
+
+.contact {
+    padding: 4vw 7vw;
+    background-color: #051050;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact h2 {
+    font-size: 4vw;
+    color: white;
+}
+
+.phone {
+    display: flex;
+    color: white;
+    gap: 4.2vw;
+}
+
+.email {
+    display: flex;
+    color: white;
+    gap: 9.5vw;
+    margin: 1vw 0vw;
+}
+
+.address {
+    display: flex;
+    color: white;
+    gap: 8.2vw;
+}
+
+footer {
+    background-color: #051050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: 3vw 0vw;
+}
+
+footer .logo {
+    width: 4vw;
+    height: 4vw;
+    background-color: #08F77E;
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer h5 {
+    font-size: 2vw;
+    color: white;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .main-left h1 {
+        font-size: 7vw;
+    }
+
+    .main-left h2 {
+        color: #051050;
+        font-size: 3vw;
+    }
+
+    .social h3 {
+        font-size: 3vw;
+    }
+
+    .main-right .img-wrapper {
+        width: 80%;
+        height: 30vh;
+    }
+
+    .services,
+    .showreel,
+    .equipments {
+        height: auto;
+        padding: 10vw 5vw;
+    }
+
+    .services h4,
+    .showreel h4,
+    .equipments h4 {
+        font-size: 6vw;
+    }
+
+    /* swiper */
+
+    .slider {
+        height: 40vh;
+        margin-top: 15vw;
+        overflow: auto;
+    }
+
+    .swiper {
+        width: 600px;
+    }
+
+    .swiper-slide {
+        border-radius: 10px;
+    }
+
+    .swiper-slide p {
+        margin-top: 1vw;
+    }
+
+    .swiper-slide button {
+        padding: 3px 10px;
+        font-size: 3vw;
+    }
+
+    .swiper-slide h6 {
+        font-size: 2.5vw;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        font-size: 4vw;
+    }
+
+    /* swiper-end */
+
+    .skills-container {
+        padding: 10vw 0vw;
+        flex-direction: column;
+    }
+
+    .skills-container h1 {
+        font-size: 10vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-container .skills {
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills span {
+        border-radius: 50px;
+        padding: 4px 5px;
+        font-size: 2.3vw;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .contact h2 {
+        font-size: 6vw;
+    }
+
+    .contact-details {
+        margin-top: 5vw;
+    }
+
+    .phone {
+        font-size: 4vw;
+    }
+
+    .email {
+        font-size: 4vw;
+        gap: 25vw;
+        margin: 3vw 0vw
+    }
+
+    .address {
+       font-size: 4vw;
+       gap: 20vw;
+    }
+
+    footer {
+        padding: 5vw 0vw;
+    }
+
+    footer .logo {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    footer h5 {
+        font-size: 4vw;
+        font-weight: 100;
+    }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 769px) {
+    .skills-container {
+        padding: 10vw 0vw;
+        flex-direction: column;
+    }
+
+    .skills-container h1 {
+        font-size: 10vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-container .skills {
+        width: 100%;
+        align-items: center;
+    }
+
+    .skills span {
+        border-radius: 50px;
+        padding: 4px 5px;
+        font-size: 2.3vw;
+    }
+}
